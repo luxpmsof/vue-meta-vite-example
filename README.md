@@ -1,6 +1,7 @@
 # meta
 
 Project that includes the vue-meta@next in a vite project and it's getting
+
 ```bash
 yarn dev
 yarn run v1.22.10

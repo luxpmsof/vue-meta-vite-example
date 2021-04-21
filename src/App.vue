@@ -1,12 +1,24 @@
 <template>
+  <metainfo>
+    <template v-slot:title="{ content }">{{ content ? `${content} | META` : `META` }}</template>
+  </metainfo>
   <img alt="Vue logo" src="./assets/logo.png" />
   <navigation />
   <router-view />
 </template>
 
-<script setup>
+<script>
 import Navigation from './components/Navigation.vue'
-
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+import { useMeta } from 'vue-meta'
+export default {
+  components: {
+    Navigation
+  },
+  setup() {
+    useMeta({
+      title: '',
+      htmlAttrs: { lang: 'en' }
+    })
+  }
+}
 </script>
