@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createMetaManager } from 'vue-meta'
+import { createMetaManager } from 'vue-meta/dist/vue-meta.esm-browser'
 import App from './App.vue'
 import router from './router'
 
