@@ -4,10 +4,8 @@
 <script>
 import { useMeta } from 'vue-meta'
 export default {
-    setup() {
-        useMeta({
-            title: 'Contact'
-        })
+    metaInfo: {
+        title: 'Contact Options',
     },
 }
 </script>
